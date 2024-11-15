@@ -107,6 +107,9 @@ This cheat sheet covers a range of useful and powerful Ubuntu commands. From sys
      Find files by name within a directory.
    - `locate <file>`  
      Locate a file using the database (requires `updatedb`).
+   - `ln -s <target> <link>`  
+     Create a symbolic link (symlink) to a file or directory.  
+     Example: `ln -s /path/to/original /path/to/symlink`
 
 ### 2. **File Permissions**
    - `chmod 755 <file>`  
