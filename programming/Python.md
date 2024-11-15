@@ -1,6 +1,3 @@
-Here is the updated Python documentation with all the data types, including `list`, `tuple`, `dictionary`, `set`, and others:
-
-```markdown
 # Python Programming Language Documentation
 
 ## Table of Contents
