@@ -1,6 +1,6 @@
 # Ubuntu Commands
 
-This cheat sheet covers a range of useful and powerful Ubuntu commands. From system information to performance stats, file operations, networking, and package management, this is a one-stop guide to essential Ubuntu commands.
+This documentation covers a range of useful and powerful Ubuntu commands. From system information to performance stats, file operations, networking, and package management, this is a one-stop guide to essential Ubuntu commands.
 
 ---
 
@@ -312,4 +312,4 @@ This cheat sheet covers a range of useful and powerful Ubuntu commands. From sys
 
 ## Conclusion
 
-This cheat sheet covers a wide variety of Ubuntu commands. Use these to quickly perform common tasks, troubleshoot issues, and monitor system performance. Happy working with Ubuntu!
+This documentation covers a wide variety of Ubuntu commands. Use these to quickly perform common tasks, troubleshoot issues, and monitor system performance. Happy working with Ubuntu!
