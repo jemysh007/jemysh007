@@ -13,6 +13,7 @@ Based in **Surat, Gujarat**, I work at the intersection of **Artificial Intellig
 - **Location:** Surat, Gujarat  
 - **Email:** jemish268@gmail.com  
 - **Phone:** +91 95121 83895  
+- **Website:** [Jemish.in](https://jemish.in)  
 - **LinkedIn:** [Jemish Dhameliya](https://www.linkedin.com/in/jemish-dhameliya/)  
 - **Instagram:** [jemish007](https://www.instagram.com/jemish007/)  
 - **X (formerly Twitter):** [heyjemish](https://x.com/heyjemish)  
@@ -37,7 +38,8 @@ Based in **Surat, Gujarat**, I work at the intersection of **Artificial Intellig
 - **JSON** for data exchange
 
 ### **🛠️ Development Tools & Frameworks:**
-- **Git**, **GitHub Desktop**, **ClickUp**  
+- **Git**, **GitHub Desktop**, **GitLab**  
+- **ClickUp**  
 - **VueJS**, **ReactJS** (Exploring for the future)  
 - **AI/ML Libraries** (Exploring for future projects)
 
