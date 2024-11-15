@@ -2,16 +2,16 @@ Sure! Here's the updated README with **Step 0** for logging into the server via 
 
 ---
 
-# Hosting a Node.js Project from GitHub on Ubuntu Server with Nginx Server, PM2, `jemish.in` Domain, SSL
+# Hosting a Node.js Project from GitHub on Ubuntu Server with Nginx Server, PM2, `yourdomain.in` Domain, SSL
 
-This guide walks you through the steps to host a Node.js project from a GitHub repository on an Ubuntu server, use PM2 for process management (with a custom project name), configure the domain **jemish.in** for accessing the application, and enable SSL using **Let's Encrypt** for secure HTTPS access.
+This guide walks you through the steps to host a Node.js project from a GitHub repository on an Ubuntu server, use PM2 for process management (with a custom project name), configure the domain **yourdomain.in** for accessing the application, and enable SSL using **Let's Encrypt** for secure HTTPS access.
 
 ## Prerequisites
 
 - A blank Ubuntu server (Ubuntu 20.04 or later).
 - SSH access to the server.
 - A GitHub repository containing your Node.js project.
-- A domain name **jemish.in** pointing to your server’s IP.
+- A domain name **yourdomain.in** pointing to your server’s IP.
 - Basic knowledge of using the command line.
 
 ## Step 0: SSH Login to the Server
@@ -158,13 +158,13 @@ To ensure PM2 restarts your application after a server reboot, configure PM2 as 
    pm2 save
    ```
 
-## Step 7: Configure DNS for `jemish.in` Domain
+## Step 7: Configure DNS for `yourdomain.in` Domain
 
-To point your domain **jemish.in** to your server, update the DNS settings of your domain.
+To point your domain **yourdomain.in** to your server, update the DNS settings of your domain.
 
 1. **Login to your Domain Registrar’s Dashboard**
 
-   - Go to the DNS management page for **jemish.in** (this might be through your domain registrar like GoDaddy, Namecheap, etc.).
+   - Go to the DNS management page for **yourdomain.in** (this might be through your domain registrar like GoDaddy, Namecheap, etc.).
 
 2. **Add an A Record**
 
@@ -190,10 +190,10 @@ To point your domain **jemish.in** to your server, update the DNS settings of yo
 
 2. **Create a New Nginx Configuration for Your Node.js App**
 
-   Create a new configuration file for **jemish.in**:
+   Create a new configuration file for **yourdomain.in**:
 
    ```bash
-   sudo nano /etc/nginx/sites-available/jemish.in
+   sudo nano /etc/nginx/sites-available/yourdomain.in
    ```
 
    Add the following configuration, replacing `your_project_port` with the actual port your app is running on (e.g., `3000`):
@@ -201,7 +201,7 @@ To point your domain **jemish.in** to your server, update the DNS settings of yo
    ```nginx
    server {
        listen 80;
-       server_name jemish.in www.jemish.in;
+       server_name yourdomain.in www.yourdomain.in;
 
        location / {
            proxy_pass http://localhost:your_project_port;
@@ -219,7 +219,7 @@ To point your domain **jemish.in** to your server, update the DNS settings of yo
    Create a symbolic link to enable the configuration:
 
    ```bash
-   sudo ln -s /etc/nginx/sites-available/jemish.in /etc/nginx/sites-enabled/
+   sudo ln -s /etc/nginx/sites-available/yourdomain.in /etc/nginx/sites-enabled/
    ```
 
 4. **Test the Nginx Configuration**
@@ -258,17 +258,17 @@ To secure your website with HTTPS, you can use **Let’s Encrypt** SSL certifica
 
 2. **Obtain the SSL Certificate**
 
-   Run the following command to obtain and install the SSL certificate for **jemish.in**:
+   Run the following command to obtain and install the SSL certificate for **yourdomain.in**:
 
    ```bash
-   sudo certbot --nginx -d jemish.in -d www.jemish.in
+   sudo certbot --nginx -d yourdomain.in -d www.yourdomain.in
    ```
 
    Certbot will automatically obtain the SSL certificate and configure Nginx for HTTPS.
 
 3. **Confirm SSL Installation**
 
-   Once the process is complete, Certbot will give you a success message. You can verify the SSL by visiting `https://jemish.in` in your browser.
+   Once the process is complete, Certbot will give you a success message. You can verify the SSL by visiting `https://yourdomain.in` in your browser.
 
 4. **Automatic Certificate Renewal**
 
@@ -280,11 +280,11 @@ To secure your website with HTTPS, you can use **Let’s Encrypt** SSL certifica
 
 ## Step 10: Access the Application
 
-Now, your Node.js application should be accessible via **jemish.in** with HTTPS.
+Now, your Node.js application should be accessible via **yourdomain.in** with HTTPS.
 
 1. **Visit the Domain**
 
-   Open your browser and go to `https://jemish.in`. You should see your Node.js app running securely over HTTPS.
+   Open your browser and go to `https://yourdomain.in`. You should see your Node.js app running securely over HTTPS.
 
 ## Step 11: Monitoring the Application
 
@@ -303,7 +303,7 @@ With these steps, you've successfully:
 1. Logged into your server using SSH.
 2. Cloned your Node.js project from GitHub.
 3. Set up PM2 to manage the application with a custom process name (`your-app-name`).
-4. Configured **jemish.in** domain to point to your server.
+4. Configured **yourdomain.in** domain to point to your server.
 5. Set up a reverse proxy with Nginx.
 6. Enabled SSL with Let’s Encrypt to serve your app over HTTPS.
 
@@ -316,4 +316,4 @@ pm2 restart your-app-name
 
 --- 
 
-This is the complete README file for setting up your Node.js app on an Ubuntu server with PM2, a custom project name, domain setup for **jemish.in**, and SSL.
+This is the complete README file for setting up your Node.js app on an Ubuntu server with PM2, a custom project name, domain setup for **yourdomain.in**, and SSL.
