@@ -1,8 +1,4 @@
-Sure! Here's the updated README with **Step 0** for logging into the server via SSH.
-
----
-
-# Hosting a Node.js Project from GitHub on Ubuntu Server with Nginx Server, PM2, `yourdomain.in` Domain, SSL
+# Hosting a Node.js Project from GitHub on Ubuntu Server with Nginx, PM2, `yourdomain.in` Domain, SSL
 
 This guide walks you through the steps to host a Node.js project from a GitHub repository on an Ubuntu server, use PM2 for process management (with a custom project name), configure the domain **yourdomain.in** for accessing the application, and enable SSL using **Let's Encrypt** for secure HTTPS access.
 
@@ -316,4 +312,10 @@ pm2 restart your-app-name
 
 --- 
 
-This is the complete README file for setting up your Node.js app on an Ubuntu server with PM2, a custom project name, domain setup for **yourdomain.in**, and SSL.
+## Thank You!
+
+Thank you for following this guide! We hope it was helpful in setting up your Node.js application using the Apache2 web server on your Ubuntu server. If you have any further questions or run into any issues, feel free
+
+ to reach out.
+
+Happy coding! 😊
