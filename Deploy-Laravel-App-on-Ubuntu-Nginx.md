@@ -1,4 +1,4 @@
-# Hosting a Laravel Project on Ubuntu Server with Nginx, SSL, and `yourdomain.in` Domain
+# Deploy a Laravel Project on Ubuntu Server with Nginx, SSL, and `yourdomain.in` Domain
 
 This guide explains how to set up a Laravel project on an Ubuntu server with **Nginx** as the web server, **Let's Encrypt SSL** for secure connections, and configuring the **yourdomain.in** domain to point to your application.
 
