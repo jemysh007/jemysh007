@@ -2,6 +2,24 @@
 
 This cheatsheet provides a quick reference to the syntax and commonly used concepts in C programming.
 
+## Table of Contents
+
+1. [Basic Syntax](#basic-syntax)
+2. [Data Types](#data-types)
+3. [Variables](#variables)
+4. [Operators](#operators)
+5. [Control Flow](#control-flow)
+6. [Functions](#functions)
+7. [Arrays](#arrays)
+8. [Pointers](#pointers)
+9. [Strings](#strings)
+10. [Structures](#structures)
+11. [Memory Management](#memory-management)
+12. [File Handling](#file-handling)
+13. [Preprocessor Directives](#preprocessor-directives)
+14. [Common Functions](#common-functions)
+15. [Error Handling](#error-handling)
+
 ---
 
 ## Basic Syntax
