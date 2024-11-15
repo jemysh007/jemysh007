@@ -309,6 +309,4 @@ $('#elementID').fadeOut();  // Fade out element
 - **JavaScript** gives you full control and is faster because it doesn’t need to load an external library. However, it can be more verbose and require more lines of code for simple tasks.
 - **jQuery** abstracts away the complexity and provides easier-to-use methods for DOM manipulation, events, animations, and AJAX. It's particularly useful for rapid development but comes with a slight performance overhead due to the need to load the library.
 
-Use **JavaScript** when performance is crucial, or when working on lightweight projects, and **jQuery**
-
- when you need quick, cross-browser compatible solutions without much setup.
+Use **JavaScript** when performance is crucial, or when working on lightweight projects, and **jQuery** when you need quick, cross-browser compatible solutions without much setup.
