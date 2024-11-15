@@ -1,4 +1,4 @@
-# Deploy a Node.js Project from GitHub on Ubuntu Server with Apache2, PM2, `yourdomain.in` Domain, and SSL
+# Deploy Node.js Project from GitHub on Ubuntu Server with Apache2, PM2, `yourdomain.in` Domain, and SSL
 
 This guide walks you through the steps to host a Node.js project from a GitHub repository on an Ubuntu server, use PM2 for process management (with a custom project name), configure the domain **yourdomain.in** for accessing the application, and enable SSL using **Let's Encrypt** for secure HTTPS access, all using Apache2 as a reverse proxy.
 
