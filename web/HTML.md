@@ -1,4 +1,4 @@
-# HTML
+# HTML Cheat Sheet
 
 This cheat sheet contains all the essential HTML elements, attributes, and their usage, providing quick references for HTML structure and syntax.
 
