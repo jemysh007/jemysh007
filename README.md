@@ -1,4 +1,4 @@
-# **Jemish Dhameliya | Visionary Software Engineer 🚀**
+# **Jemish Dhameliya | Software Engineer 🚀**
 
 Greetings, fellow innovators. I’m **Jemish Dhameliya**, a Software Engineer with a **passion for creating tomorrow’s digital landscapes** today. My mission? To transform ideas into **immersive** and **intelligent experiences** that redefine the way we interact with technology.
 
@@ -28,7 +28,8 @@ Based in **Surat, Gujarat**, I work at the intersection of **Artificial Intellig
 
 ### **⚙️ Backend Engineering:**
 - **PHP**, **Python**, **NodeJS**, **ExpressJS**  
-- **Laravel**, **Livewire**, **InertiaJS**, **CodeIgniter (3, 4)**, **CakePHP**  
+- **Laravel**, **Livewire**, **InertiaJS**, **CodeIgniter (3, 4)**  
+- **CakePHP (Basics)**
 
 ### **🌐 Data & APIs:**
 - **MySQL**, **SQL**, **MongoDB**  
@@ -46,20 +47,6 @@ Based in **Surat, Gujarat**, I work at the intersection of **Artificial Intellig
 
 - **B.Sc. in Computer Science** – Shree Ramkrishna Institute of Computer Science and Applied Science (2020)  
 - **H.S.C. (Science Stream)** – I.P. Savani High School (2017)
-
----
-
-## **🚀 Work Experience:**
-From **building scalable web applications** to **integrating intelligent systems**, my experience is a **bridge between today’s tech and tomorrow’s possibilities**.
-
-### **Software Developer | Techerudite** (08/2022 - 10/2023, Surat, Gujarat)  
-- Developed features and functionalities in **Laravel** and **VueJS**, and enhanced the user experience by ensuring the **seamless operation** of backend and frontend systems.
-
-### **Software Developer | Doyenhub Software Solutions** (02/2022 - 08/2022, Surat, Gujarat)  
-- Worked on **dynamic web applications** and collaborated closely with the team to ensure consistent **user experience** and **system reliability**.
-
-### **Jr. PHP Developer | Raininfotech Private Limited** (07/2020 - 11/2021, Surat, Gujarat)  
-- Focused on **frontend and backend development** for several websites, ensuring clean, efficient, and scalable code for all projects.
 
 ---
 
@@ -98,5 +85,3 @@ If you’re as passionate about shaping the future as I am, let’s connect and 
 Reach me at:
 - **Email:** jemish268@gmail.com  
 - **Phone:** +91 95121 83895
-
-
