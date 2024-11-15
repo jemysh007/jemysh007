@@ -2,7 +2,7 @@ Sure! Here's the updated README with **Step 0** for logging into the server via 
 
 ---
 
-# Hosting a Node.js Project from GitHub on Ubuntu Server with PM2, `jemish.in` Domain, and SSL
+# Hosting a Node.js Project from GitHub on Ubuntu Server with Nginx Server, PM2, `jemish.in` Domain, SSL
 
 This guide walks you through the steps to host a Node.js project from a GitHub repository on an Ubuntu server, use PM2 for process management (with a custom project name), configure the domain **jemish.in** for accessing the application, and enable SSL using **Let's Encrypt** for secure HTTPS access.
 
