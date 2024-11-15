@@ -1,6 +1,3 @@
-Here's a Python cheatsheet in markdown format that covers the most important aspects of the language:
-
-```markdown
 # Python Programming Language Cheatsheet
 
 This cheatsheet provides a quick reference to the syntax and commonly used concepts in Python programming.
@@ -355,5 +352,3 @@ print(john.greet())  # Output: Hello, my name is John and I am 30 years old.
 
 This cheatsheet provides a concise reference to the most commonly used syntax and concepts in Python programming. It covers the basics, along with more advanced concepts like list comprehensions, classes, and exception handling. Use this as a quick reference while working with Python.
 ```
-
-This cheatsheet should provide a solid overview of Python’s syntax, data structures, functions, and best practices in a compact format. You can refer to this whenever you need a quick refresher on Python programming!
