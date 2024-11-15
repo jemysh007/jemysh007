@@ -1,6 +1,6 @@
-# Deploy Laravel Project on Ubuntu Server with Apache2, PM2, SSL, and `yourdomain.in` Domain
+# Deploy Laravel Project on Ubuntu Server with Apache2, SSL, and `yourdomain.in` Domain
 
-This guide explains how to set up a Laravel project on an Ubuntu server, configure Apache2 as a reverse proxy, set up SSL using Let's Encrypt, and use PM2 for managing the Laravel queue or background tasks. The domain **yourdomain.in** will be used to access the application, and the application will be served securely over HTTPS.
+This guide explains how to set up a Laravel project on an Ubuntu server, configure Apache2 as a reverse proxy, set up SSL using Let's Encrypt. The domain **yourdomain.in** will be used to access the application, and the application will be served securely over HTTPS.
 
 ## Prerequisites
 
@@ -286,7 +286,6 @@ With these steps, you have:
 2. Configured your `.env` file for database and environment settings.
 3. Applied Laravel migrations and database seeders.
 4. Configured SSL using Let's Encrypt.
-5. Enabled PM2 for managing background tasks or queues if necessary.
 
 ---
 
