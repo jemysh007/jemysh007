@@ -1,4 +1,4 @@
-Here’s a full markdown (`.md`) documentation template for Python that covers basic concepts, advanced topics, and other essential details. This template can be expanded depending on your project or the specific use case you have.
+Here is the updated Python documentation with all the data types, including `list`, `tuple`, `dictionary`, `set`, and others:
 
 ```markdown
 # Python Programming Language Documentation
@@ -9,6 +9,13 @@ Here’s a full markdown (`.md`) documentation template for Python that covers b
 2. [Installation](#installation)
 3. [Basic Syntax](#basic-syntax)
 4. [Data Types](#data-types)
+    - [Numeric Types](#numeric-types)
+    - [Sequence Types](#sequence-types)
+    - [Mapping Type](#mapping-type)
+    - [Set Types](#set-types)
+    - [Text Type](#text-type)
+    - [Boolean Type](#boolean-type)
+    - [Binary Types](#binary-types)
 5. [Control Flow](#control-flow)
 6. [Functions](#functions)
 7. [Modules and Packages](#modules-and-packages)
@@ -86,21 +93,105 @@ if x > 5:
 
 Python supports various built-in data types:
 
-- **Numeric Types**: `int`, `float`, `complex`
-- **Sequence Types**: `list`, `tuple`, `range`
-- **Mapping Type**: `dict`
-- **Set Types**: `set`, `frozenset`
-- **Text Type**: `str`
-- **Boolean Type**: `bool`
-- **Binary Types**: `bytes`, `bytearray`
+### Numeric Types
+
+- **`int`**: Integer numbers, e.g., `10`, `-5`
+- **`float`**: Floating point numbers, e.g., `3.14`, `-2.5`
+- **`complex`**: Complex numbers, e.g., `2 + 3j`
 
 Example:
 ```python
 integer = 5
-string = "Hello, World!"
-float_num = 3.1415
-is_active = True
+floating_point = 3.1415
+complex_number = 2 + 3j
 ```
+
+### Sequence Types
+
+- **`list`**: Ordered, mutable collection of items. Lists can contain items of different data types.
+  
+  Example:
+  ```python
+  my_list = [1, 2, 3, "apple", 4.5]
+  ```
+  
+- **`tuple`**: Ordered, immutable collection of items. Once a tuple is created, its contents cannot be modified.
+  
+  Example:
+  ```python
+  my_tuple = (1, 2, 3, "apple", 4.5)
+  ```
+  
+- **`range`**: Immutable sequence of numbers, commonly used in loops.
+  
+  Example:
+  ```python
+  for i in range(5):
+      print(i)
+  ```
+
+### Mapping Type
+
+- **`dict`**: Unordered collection of key-value pairs. Keys are unique.
+  
+  Example:
+  ```python
+  my_dict = {"name": "John", "age": 30, "city": "New York"}
+  ```
+
+### Set Types
+
+- **`set`**: Unordered collection of unique items. Sets do not allow duplicates.
+  
+  Example:
+  ```python
+  my_set = {1, 2, 3, 4}
+  my_set.add(5)  # Adds an element to the set
+  my_set.remove(3)  # Removes an element from the set
+  ```
+
+- **`frozenset`**: Immutable version of a set. Once created, the items cannot be changed.
+  
+  Example:
+  ```python
+  my_frozenset = frozenset([1, 2, 3, 4])
+  ```
+
+### Text Type
+
+- **`str`**: A sequence of characters used to store text. Strings are immutable in Python.
+  
+  Example:
+  ```python
+  my_string = "Hello, World!"
+  print(my_string.upper())  # Outputs: HELLO, WORLD!
+  ```
+
+### Boolean Type
+
+- **`bool`**: Represents `True` or `False` values.
+  
+  Example:
+  ```python
+  is_active = True
+  is_done = False
+  ```
+
+### Binary Types
+
+- **`bytes`**: Immutable sequence of bytes (8-bit values).
+  
+  Example:
+  ```python
+  my_bytes = b"hello"
+  ```
+  
+- **`bytearray`**: Mutable version of `bytes`.
+  
+  Example:
+  ```python
+  my_bytearray = bytearray([65, 66, 67])
+  ```
 
 ## Control Flow
 
@@ -256,12 +347,7 @@ pip install numpy pandas requests
 
 - [Official Python Documentation](https://docs.python.org/3/)
 - [Python Package Index (PyPI)](https://pypi.org/)
-- [PEP 8 - Style Guide for Python Code](https://pep8.org/)
-- [Python Cheat Sheet](https://www.pythonsheets.com/)
+- [
 
----
-
-*End of Documentation*
+Real Python](https://realpython.com/)
 ```
-
-This template provides a comprehensive guide that can be tailored for specific Python projects. You can expand on each section with more detailed examples based on the actual project needs.
