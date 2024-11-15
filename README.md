@@ -28,8 +28,7 @@ Based in **Surat, Gujarat**, I work at the intersection of **Artificial Intellig
 
 ### **⚙️ Backend Engineering:**
 - **PHP**, **Python**, **NodeJS**, **ExpressJS**  
-- **Laravel**, **Livewire**, **InertiaJS**, **CodeIgniter (3, 4)**  
-- **CakePHP (Basics)**
+- **Laravel**, **Livewire**, **InertiaJS**, **CodeIgniter (3, 4)**, **CakePHP**  
 
 ### **🌐 Data & APIs:**
 - **MySQL**, **SQL**, **MongoDB**  
@@ -54,15 +53,13 @@ Based in **Surat, Gujarat**, I work at the intersection of **Artificial Intellig
 From **building scalable web applications** to **integrating intelligent systems**, my experience is a **bridge between today’s tech and tomorrow’s possibilities**.
 
 ### **Software Developer | Techerudite** (08/2022 - 10/2023, Surat, Gujarat)  
-- Built **facesconsent.com** as part of a high-performance team using **Laravel**, **VueJS**, and **Payment Gateways** to create an interactive and secure user experience.
-- Focused on **performance optimization**, **scalable architecture**, and **seamless integration**.
+- Developed features and functionalities in **Laravel** and **VueJS**, and enhanced the user experience by ensuring the **seamless operation** of backend and frontend systems.
 
 ### **Software Developer | Doyenhub Software Solutions** (02/2022 - 08/2022, Surat, Gujarat)  
-- Enhanced **Kickpages.com** using **AngularJS**, **PHP**, and **APIs** to deliver **dynamic** web experiences with a futuristic approach to user engagement.
-- Integrated **cutting-edge technologies** and worked in an **Agile environment** to bring innovation to the forefront.
+- Worked on **dynamic web applications** and collaborated closely with the team to ensure consistent **user experience** and **system reliability**.
 
 ### **Jr. PHP Developer | Raininfotech Private Limited** (07/2020 - 11/2021, Surat, Gujarat)  
-- Delivered **5-7 websites** as part of a fast-paced team, focusing on both **frontend** and **backend** development to deliver **clean**, **efficient code** and **dynamic content**.
+- Focused on **frontend and backend development** for several websites, ensuring clean, efficient, and scalable code for all projects.
 
 ---
 
@@ -84,7 +81,8 @@ Beyond coding, I recharge through creative outlets and passions that shape who I
 - **Music** 🎶: A symphony of **soundtracks** that inspire my creative flow.  
 - **Travel** ✈️: Exploring the **global tech landscape** and connecting with like-minded creators.  
 - **Photography** 📸: Capturing moments that reflect the beauty of technology and nature.  
-- **Anime** 🎥: A universe of **visual storytelling** and tech-inspired narratives that fuel my imagination.
+- **Anime** 🎥: A universe of **visual storytelling** and tech-inspired narratives that fuel my imagination.  
+- **Movies** 🎬: A love for **cinematic masterpieces**, exploring futuristic narratives that shape our culture.
 
 ---
 
@@ -100,4 +98,5 @@ If you’re as passionate about shaping the future as I am, let’s connect and 
 Reach me at:
 - **Email:** jemish268@gmail.com  
 - **Phone:** +91 95121 83895
+
 
