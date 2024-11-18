@@ -1,354 +1,415 @@
-# Python Programming Language Cheatsheet
-
-This cheatsheet provides a quick reference to the syntax and commonly used concepts in Python programming.
+# Python Cheatsheet: Useful Functions and Libraries
 
 ## Table of Contents
-
-1. [Basic Syntax](#basic-syntax)
-2. [Variables and Data Types](#variables-and-data-types)
-3. [Operators](#operators)
-4. [Control Flow](#control-flow)
-5. [Functions](#functions)
-6. [Data Structures](#data-structures)
-7. [Modules and Libraries](#modules-and-libraries)
-8. [File Handling](#file-handling)
-9. [Exception Handling](#exception-handling)
-10. [List Comprehensions](#list-comprehensions)
-11. [Classes and Objects](#classes-and-objects)
-12. [Lambda Functions](#lambda-functions)
-13. [Common Functions](#common-functions)
-14. [Best Practices](#best-practices)
+1. [Basic Syntax & Constants](#1-basic-syntax--constants)
+2. [Data Types](#2-data-types)
+3. [String Manipulation](#3-string-manipulation)
+4. [Lists](#4-lists)
+5. [Tuples](#5-tuples)
+6. [Dictionaries](#6-dictionaries)
+7. [Sets](#7-sets)
+8. [Functions](#8-functions)
+9. [Lambda Functions](#9-lambda-functions)
+10. [Loops](#10-loops)
+11. [Conditionals](#11-conditionals)
+12. [Comprehensions](#12-comprehensions)
+13. [File Operations](#13-file-operations)
+14. [Date and Time](#14-date-and-time)
+15. [Error Handling](#15-error-handling)
+16. [Modules and Packages](#16-modules-and-packages)
+17. [Regular Expressions](#17-regular-expressions)
+18. [Iterators and Generators](#18-iterators-and-generators)
+19. [Object-Oriented Programming (OOP)](#19-object-oriented-programming-oop)
+20. [Popular Libraries](#20-popular-libraries)
 
 ---
 
-## Basic Syntax
+## 1. **Basic Syntax & Constants**
 
-### Print Statement
-
+### 1.1 **Printing Output**
 ```python
 print("Hello, World!")
 ```
 
-### Comments
-
-- **Single-line comment**: `# This is a comment`
-- **Multi-line comment**: 
-  ```python
-  """
-  This is a
-  multi-line comment
-  """
-  ```
-
----
-
-## Variables and Data Types
-
-### Declaring Variables
-
+### 1.2 **Comments**
 ```python
-x = 10        # Integer
-y = 20.5      # Float
-name = "John" # String
-is_active = True  # Boolean
+# This is a single-line comment
+
+'''
+This is a
+multi-line comment
+'''
 ```
 
-### Data Types
-
-- **int**: Integer (e.g., `x = 10`)
-- **float**: Floating point number (e.g., `y = 20.5`)
-- **str**: String (e.g., `name = "John"`)
-- **bool**: Boolean (e.g., `is_active = True`)
-- **list**: List (e.g., `numbers = [1, 2, 3]`)
-- **tuple**: Tuple (e.g., `coordinates = (1, 2, 3)`)
-- **dict**: Dictionary (e.g., `person = {"name": "John", "age": 30}`)
-- **set**: Set (e.g., `fruits = {"apple", "banana", "cherry"}`)
-
----
-
-## Operators
-
-### Arithmetic Operators
-
+### 1.3 **Constants**
+Python doesn’t have built-in constants, but you can define them in uppercase.
 ```python
-+   # Addition
--   # Subtraction
-*   # Multiplication
-/   # Division (float result)
-//  # Floor Division (integer result)
-%   # Modulus (remainder)
-**  # Exponentiation
-```
-
-### Relational Operators
-
-```python
-==  # Equal to
-!=  # Not equal to
->   # Greater than
-<   # Less than
->=  # Greater than or equal to
-<=  # Less than or equal to
-```
-
-### Logical Operators
-
-```python
-and # Logical AND
-or  # Logical OR
-not # Logical NOT
-```
-
-### Assignment Operators
-
-```python
-=   # Simple assignment
-+=  # Add and assign
--=  # Subtract and assign
-*=  # Multiply and assign
-/=  # Divide and assign
-%=  # Modulus and assign
+PI = 3.14159
 ```
 
 ---
 
-## Control Flow
+## 2. **Data Types**
 
-### if-else Statement
-
+### 2.1 **Numbers**
 ```python
-if condition:
-    # code if true
-elif another_condition:
-    # code if second condition is true
-else:
-    # code if no condition is true
+x = 10            # Integer
+y = 3.14          # Float
+z = 2 + 3j        # Complex number
 ```
 
-### for Loop
-
+### 2.2 **Strings**
 ```python
-for i in range(5):  # Loop from 0 to 4
-    print(i)
+s = "Hello, Python!"
 ```
 
-### while Loop
+### 2.3 **Booleans**
+```python
+is_active = True
+is_done = False
+```
 
+### 2.4 **Lists**
+```python
+my_list = [1, 2, 3, "apple", 5.6]
+```
+
+### 2.5 **Tuples**
+```python
+my_tuple = (1, 2, 3)
+```
+
+### 2.6 **Dictionaries**
+```python
+my_dict = {"name": "John", "age": 30}
+```
+
+### 2.7 **Sets**
+```python
+my_set = {1, 2, 3, 4}
+```
+
+---
+
+## 3. **String Manipulation**
+
+### 3.1 **Length of String**
+```python
+len("Hello")  # Outputs: 5
+```
+
+### 3.2 **String Slicing**
+```python
+s = "Hello"
+print(s[1:4])  # Outputs: ell
+```
+
+### 3.3 **Convert to Upper/Lower**
+```python
+s = "hello"
+print(s.upper())  # Outputs: HELLO
+print(s.lower())  # Outputs: hello
+```
+
+### 3.4 **String Concatenation**
+```python
+greeting = "Hello"
+name = "John"
+print(greeting + " " + name)  # Outputs: Hello John
+```
+
+---
+
+## 4. **Lists**
+
+### 4.1 **List Access & Modification**
+```python
+my_list = [1, 2, 3, "apple"]
+my_list[0] = 10  # Modify first element
+print(my_list)  # Outputs: [10, 2, 3, 'apple']
+```
+
+### 4.2 **List Append**
+```python
+my_list.append(4)
+print(my_list)  # Outputs: [10, 2, 3, 'apple', 4]
+```
+
+### 4.3 **List Remove**
+```python
+my_list.remove("apple")
+print(my_list)  # Outputs: [10, 2, 3, 4]
+```
+
+---
+
+## 5. **Tuples**
+
+### 5.1 **Accessing Tuple Elements**
+```python
+my_tuple = (1, 2, 3)
+print(my_tuple[0])  # Outputs: 1
+```
+
+### 5.2 **Immutability of Tuples**
+```python
+# You cannot change an element in a tuple
+# my_tuple[0] = 10  # This will raise an error
+```
+
+---
+
+## 6. **Dictionaries**
+
+### 6.1 **Accessing Dictionary Elements**
+```python
+my_dict = {"name": "John", "age": 30}
+print(my_dict["name"])  # Outputs: John
+```
+
+### 6.2 **Adding/Updating Key-Value Pairs**
+```python
+my_dict["location"] = "New York"
+print(my_dict)  # Outputs: {'name': 'John', 'age': 30, 'location': 'New York'}
+```
+
+### 6.3 **Removing Items**
+```python
+del my_dict["age"]
+print(my_dict)  # Outputs: {'name': 'John', 'location': 'New York'}
+```
+
+---
+
+## 7. **Sets**
+
+### 7.1 **Creating and Modifying Sets**
+```python
+my_set = {1, 2, 3}
+my_set.add(4)  # Add item
+print(my_set)  # Outputs: {1, 2, 3, 4}
+```
+
+### 7.2 **Set Operations**
+```python
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+print(set1 & set2)  # Intersection: {3}
+print(set1 | set2)  # Union: {1, 2, 3, 4, 5}
+```
+
+---
+
+## 8. **Functions**
+
+### 8.1 **Defining a Function**
+```python
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))  # Outputs: Hello, Alice!
+```
+
+### 8.2 **Default Parameters**
+```python
+def greet(name="World"):
+    return f"Hello, {name}!"
+
+print(greet())  # Outputs: Hello, World!
+```
+
+---
+
+## 9. **Lambda Functions**
+
+### 9.1 **Defining a Lambda Function**
+```python
+add = lambda x, y: x + y
+print(add(5, 3))  # Outputs: 8
+```
+
+---
+
+## 10. **Loops**
+
+### 10.1 **For Loop**
+```python
+for i in range(3):
+    print(i)  # Outputs: 0 1 2
+```
+
+### 10.2 **While Loop**
 ```python
 i = 0
-while i < 5:
-    print(i)
+while i < 3:
+    print(i)  # Outputs: 0 1 2
     i += 1
 ```
 
 ---
 
-## Functions
+## 11. **Conditionals**
 
-### Defining Functions
-
+### 11.1 **If-Else Statement**
 ```python
-def greet(name):
-    return f"Hello, {name}!"
-```
-
-### Calling Functions
-
-```python
-result = greet("John")
-print(result)
-```
-
-### Lambda Functions
-
-```python
-multiply = lambda x, y: x * y
-result = multiply(5, 3)
-print(result)  # Output: 15
+x = 10
+if x > 5:
+    print("Greater than 5")  # Outputs: Greater than 5
+else:
+    print("Less than or equal to 5")
 ```
 
 ---
 
-## Data Structures
+## 12. **Comprehensions**
 
-### Lists
+### 12.1 **List Comprehension**
+```python
+squares = [x**2 for x in range(5)]
+print(squares)  # Outputs: [0, 1, 4, 9, 16]
+```
 
-- **Create a List**: `numbers = [1, 2, 3, 4]`
-- **Access Elements**: `numbers[0]`
-- **List Slicing**: `numbers[1:3]`
-- **Append to List**: `numbers.append(5)`
-- **Remove from List**: `numbers.remove(2)`
-
-### Tuples
-
-- **Create a Tuple**: `coordinates = (1, 2, 3)`
-- **Access Elements**: `coordinates[0]`
-- **Tuple Unpacking**: `x, y, z = coordinates`
-
-### Dictionaries
-
-- **Create a Dictionary**: `person = {"name": "John", "age": 30}`
-- **Access Elements**: `person["name"]`
-- **Add Key-Value Pair**: `person["city"] = "New York"`
-- **Remove Key-Value Pair**: `del person["age"]`
-
-### Sets
-
-- **Create a Set**: `fruits = {"apple", "banana", "cherry"}`
-- **Add Element**: `fruits.add("orange")`
-- **Remove Element**: `fruits.remove("banana")`
+### 12.2 **Dictionary Comprehension**
+```python
+squares_dict = {x: x**2 for x in range(5)}
+print(squares_dict)  # Outputs: {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+```
 
 ---
 
-## Modules and Libraries
+## 13. **File Operations**
 
-### Importing Modules
-
+### 13.1 **Reading a File**
 ```python
-import math
-from math import pi
-```
-
-### Common Libraries
-
-- `math`: Mathematical functions (e.g., `math.sqrt(16)`)
-- `random`: Random number generation (e.g., `random.randint(1, 10)`)
-- `datetime`: Working with dates and times
-- `os`: Interacting with the operating system
-- `sys`: Accessing system-specific parameters
-
----
-
-## File Handling
-
-### Opening Files
-
-```python
-file = open("file.txt", "r")  # Open file in read mode
-```
-
-### Reading from Files
-
-```python
-content = file.read()  # Read entire content
-lines = file.readlines()  # Read lines as a list
-```
-
-### Writing to Files
-
-```python
-file = open("file.txt", "w")  # Open file in write mode
-file.write("Hello, World!")
-```
-
-### Closing Files
-
-```python
-file.close()
-```
-
-### With Statement (Context Manager)
-
-```python
-with open("file.txt", "r") as file:
+with open('file.txt', 'r') as file:
     content = file.read()
+    print(content)
+```
+
+### 13.2 **Writing to a File**
+```python
+with open('file.txt', 'w') as file:
+    file.write("Hello, World!")
 ```
 
 ---
 
-## Exception Handling
+## 14. **Date and Time**
 
-### try-except Block
-
+### 14.1 **Get Current Date and Time**
 ```python
-try:
-    x = 1 / 0
-except ZeroDivisionError as e:
-    print(f"Error: {e}")
+import datetime
+now = datetime.datetime.now()
+print(now)  # Outputs: current date and time
 ```
 
-### try-except-finally Block
+### 14.2 **Format Date**
+```python
+print(now.strftime("%Y-%m-%d %H:%M:%S"))  # Outputs: 2024-11-18 12:45:00
+```
 
+---
+
+## 15. **Error Handling**
+
+### 15.1 **Try-Except Block**
 ```python
 try:
     x = 1 / 0
 except ZeroDivisionError:
-    print("Cannot divide by zero")
-finally:
-    print("Execution completed")
+    print("Cannot divide by zero!")
 ```
 
 ---
 
-## List Comprehensions
+## 16. **Modules and Packages**
 
-List comprehensions provide a concise way to create lists.
-
+### 16.1 **Importing a Module**
 ```python
-# Creating a list of squares
-squares = [x**2 for x in range(5)]
+import math
+print(math.sqrt(16))  # Outputs: 4.0
 ```
 
-### Conditional List Comprehensions
-
+### 16.2 **Using Aliases**
 ```python
-# List of even numbers
-even_numbers = [x for x in range(10) if x % 2 == 0]
+import numpy as np
+arr = np.array([1, 2, 3])
+print(arr) 
+
+ # Outputs: [1 2 3]
 ```
 
 ---
 
-## Classes and Objects
+## 17. **Regular Expressions**
 
-### Defining a Class
-
+### 17.1 **Match a Pattern**
 ```python
-class Person:
-    def __init__(self, name, age):
+import re
+pattern = r'\d+'
+result = re.findall(pattern, "There are 24 apples and 42 bananas.")
+print(result)  # Outputs: ['24', '42']
+```
+
+---
+
+## 18. **Iterators and Generators**
+
+### 18.1 **Iterators**
+```python
+my_list = [1, 2, 3]
+iterator = iter(my_list)
+print(next(iterator))  # Outputs: 1
+```
+
+### 18.2 **Generators**
+```python
+def count_up_to(n):
+    i = 1
+    while i <= n:
+        yield i
+        i += 1
+
+gen = count_up_to(3)
+print(next(gen))  # Outputs: 1
+```
+
+---
+
+## 19. **Object-Oriented Programming (OOP)**
+
+### 19.1 **Defining a Class**
+```python
+class Dog:
+    def __init__(self, name):
         self.name = name
-        self.age = age
     
-    def greet(self):
-        return f"Hello, my name is {self.name} and I am {self.age} years old."
+    def bark(self):
+        return f"{self.name} says woof!"
+
+dog = Dog("Buddy")
+print(dog.bark())  # Outputs: Buddy says woof!
 ```
 
-### Creating an Object
+---
 
+## 20. **Popular Libraries**
+
+### 20.1 **NumPy (for Scientific Computing)**
 ```python
-john = Person("John", 30)
-print(john.greet())  # Output: Hello, my name is John and I am 30 years old.
+import numpy as np
+arr = np.array([1, 2, 3, 4])
+print(arr + 5)  # Outputs: [6 7 8 9]
+```
+
+### 20.2 **Pandas (for Data Manipulation)**
+```python
+import pandas as pd
+data = {'Name': ['Alice', 'Bob'], 'Age': [25, 30]}
+df = pd.DataFrame(data)
+print(df)
 ```
 
 ---
 
-## Common Functions
-
-- **len()**: Returns the length of an object
-  ```python
-  len("Hello")  # 5
-  ```
-- **range()**: Generates a range of numbers
-  ```python
-  range(5)  # Generates [0, 1, 2, 3, 4]
-  ```
-- **type()**: Returns the type of an object
-  ```python
-  type(10)  # <class 'int'>
-  ```
-
----
-
-## Best Practices
-
-- Use **snake_case** for variable and function names.
-- Use **PEP 8** guidelines for formatting code.
-- Keep code simple and readable.
-- Write **docstrings** for functions and classes.
-- Use **list comprehensions** where applicable for conciseness.
-
----
-
-## Conclusion
-
-This cheatsheet provides a concise reference to the most commonly used syntax and concepts in Python programming. It covers the basics, along with more advanced concepts like list comprehensions, classes, and exception handling. Use this as a quick reference while working with Python.
-```
+This Python cheatsheet covers the most commonly used functions and concepts in Python. The sections are designed to provide quick access to useful code snippets and explanations to enhance your Python programming knowledge.
