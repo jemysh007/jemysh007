@@ -1,6 +1,3 @@
-Apologies for that oversight! Here is the corrected version of the full PHP cheatsheet documentation, restoring the 20 points and making sure everything is included properly.
-
-```markdown
 # PHP Cheatsheet
 
 This is a comprehensive PHP cheatsheet, covering everything from basic syntax and operations to advanced topics like MySQL interaction, file handling, and more. This guide is perfect for both beginners and experienced developers.
