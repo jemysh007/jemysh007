@@ -86,4 +86,3 @@ If you’re as passionate about shaping the future as I am, let’s connect and 
 
 Reach me at:
 - **Email:** jemish268@gmail.com  
-- **Phone:** +91 95121 83895
