@@ -67,7 +67,9 @@ This document explains how to implement AJAX-based validation for a registration
 <?php
 header('Content-Type: application/json');
 
-$response = ['data' => null, 'status' => 'error', 'message' => ''];
+$data = null;
+$status = 'error';
+$message = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = trim($_POST['username']);
@@ -75,25 +77,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = trim($_POST['password']);
 
     if (empty($username) || empty($email) || empty($password)) {
-        $response['message'] = 'All fields are required.';
+        $message = 'All fields are required.';
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $response['message'] = 'Invalid email address.';
+        $message = 'Invalid email address.';
     } elseif (strlen($password) < 6) {
-        $response['message'] = 'Password must be at least 6 characters long.';
+        $message = 'Password must be at least 6 characters long.';
     } else {
-        // Assume database logic here
-        $response['status'] = 'success';
-        $response['message'] = 'Registration successful.';
-        $response['data'] = [
+        $status = 'success';
+        $message = 'Registration successful.';
+        $data = [
             'username' => $username,
             'email' => $email,
         ];
     }
 } else {
-    $response['message'] = 'Invalid request method.';
+    $message = 'Invalid request method.';
 }
 
-echo json_encode($response);
+echo json_encode([
+    'data' => $data,
+    'status' => $status,
+    'message' => $message,
+]);
 ```
 
 ---
