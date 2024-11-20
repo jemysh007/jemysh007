@@ -12,7 +12,6 @@ Based in **Surat, Gujarat**, I work at the intersection of **Artificial Intellig
 - **Age:** 24  
 - **Location:** Surat, Gujarat  
 - **Email:** jemish268@gmail.com  
-- **Phone:** +91 95121 83895  
 - **Website:** [Jemish.in](https://jemish.in)  
 - **LinkedIn:** [Jemish Dhameliya](https://www.linkedin.com/in/jemish-dhameliya/)  
 - **Instagram:** [jemish007](https://www.instagram.com/jemish007/)  
