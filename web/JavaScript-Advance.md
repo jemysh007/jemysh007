@@ -6,7 +6,7 @@ This guide covers advanced JavaScript concepts with detailed explanations and ex
 
 ## Table of Contents
 
-1. [JSON (JavaScript Object Notation)](#json)
+1. [JSON (JavaScript Object Notation)](#json-javascript-object-notation)
 2. [Classes and Objects](#classes-and-objects)
 3. [Callbacks](#callbacks)
 4. [Asynchronous JavaScript](#asynchronous-javascript)
@@ -353,3 +353,4 @@ john.greet();
 ## Conclusion
 
 Mastering advanced JavaScript concepts is essential for becoming a proficient developer. These concepts — such as closures, the `this` keyword, asynchronous programming, and modern ES features — will allow you to write clean, efficient, and maintainable code. Keep practicing, experimenting, and building projects to solidify your understanding of JavaScript!
+```
