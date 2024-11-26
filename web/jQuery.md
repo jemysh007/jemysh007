@@ -206,6 +206,31 @@ $.post('submit.php', { name: 'John', age: 25 }, function(response) {
 });
 ```
 
+### File Upload Example
+
+```javascript
+$('#uploadForm').submit(function(event) {
+    event.preventDefault();  // Prevent the form from submitting normally
+    
+    var formData = new FormData(this);  // Create a FormData object with the form data
+    
+    $.ajax({
+        url: 'upload.php',  // URL to handle the file upload
+        type: 'POST',
+        data: formData,
+        contentType: false,  // Don't set content type
+        processData: false,  // Don't process data
+        success: function(response) {
+            console.log('File uploaded successfully!');
+            console.log(response);  // Response from the server
+        },
+        error: function(xhr, status, error) {
+            console.error('Upload failed: ' + error);
+        }
+    });
+});
+```
+
 ---
 
 ## 7. **Traversing DOM**
@@ -307,3 +332,5 @@ $('#element').css('color', 'red').slideUp().fadeIn().text('New text');
 ## Conclusion
 
 This jQuery cheat sheet provides a quick reference to common jQuery syntax, functions, and methods for DOM manipulation, event handling, AJAX requests, and more. Keep this handy as a guide for your jQuery projects!
+
+---
