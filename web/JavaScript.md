@@ -408,6 +408,76 @@ try {
 
 ---
 
+## 13. **DOM Manipulation**
+
+### Selecting Elements
+
+- **getElementById**
+
+```javascript
+let element = document.getElementById("myId");
+```
+
+- **getElementsByClassName**
+
+```javascript
+let elements = document.getElementsByClassName("myClass");
+```
+
+- **getElementsByTagName**
+
+```javascript
+let elements = document.getElementsByTagName("div");
+```
+
+- **querySelector**
+
+```javascript
+let element = document.querySelector(".myClass");
+```
+
+- **querySelectorAll**
+
+```javascript
+let elements = document.querySelectorAll(".myClass");
+```
+
+### Modifying Elements
+
+- **textContent**
+
+```javascript
+element.textContent = "New text content";
+```
+
+- **innerHTML**
+
+```javascript
+element.innerHTML = "<p>New HTML content</p>";
+```
+
+- **style**
+
+```javascript
+element.style.color = "red";
+```
+
+### Creating and Appending Elements
+
+```javascript
+let newElement = document.createElement("div");
+newElement.textContent = "Hello, World!";
+document.body.appendChild(newElement);
+```
+
+### Removing Elements
+
+```javascript
+element.remove();
+```
+
+---
+
 ## Conclusion
 
 This JavaScript cheat sheet summarizes key concepts, methods, and syntax for writing clean, effective code. Keep this as a quick reference while you're coding!
