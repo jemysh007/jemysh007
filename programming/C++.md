@@ -28,6 +28,8 @@ This cheatsheet provides a quick reference to the most important concepts, synta
 
 ### Structure of a C++ Program
 
+A basic C++ program includes headers, a main function, and statements. The `#include <iostream>` is a preprocessor directive that includes the standard input-output stream library.
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -41,6 +43,8 @@ int main() {
 
 ### Comments
 
+Comments are used to explain code and are ignored by the compiler.
+
 - **Single-line comment**: `// This is a comment`
 - **Multi-line comment**: 
   ```cpp
@@ -51,6 +55,8 @@ int main() {
 ---
 
 ## Data Types
+
+C++ supports various data types to store different kinds of data.
 
 - **int**: Integer (e.g., `int x = 10;`)
 - **float**: Floating point number (e.g., `float x = 10.5f;`)
@@ -63,6 +69,8 @@ int main() {
 ---
 
 ## Variables
+
+Variables are used to store data that can be manipulated by the program.
 
 ### Declaring Variables
 
@@ -86,6 +94,8 @@ string name = "John";
 ---
 
 ## Operators
+
+Operators are symbols that perform operations on variables and values.
 
 ### Arithmetic Operators
 
@@ -138,6 +148,8 @@ string name = "John";
 
 ## Control Flow
 
+Control flow statements allow you to control the execution of code based on conditions.
+
 ### if-else Statement
 
 ```cpp
@@ -164,6 +176,8 @@ switch (expression) {
 ```
 
 ### Loops
+
+Loops are used to execute a block of code repeatedly.
 
 #### for Loop
 
@@ -197,6 +211,8 @@ do {
 
 ## Functions
 
+Functions are blocks of code that perform a specific task and can be reused.
+
 ### Declaring Functions
 
 ```cpp
@@ -222,12 +238,16 @@ cout << result;  // Output: 7
 
 ### Function Overloading
 
+Function overloading allows you to define multiple functions with the same name but different parameters.
+
 ```cpp
 int add(int a, int b) { return a + b; }
 double add(double a, double b) { return a + b; }
 ```
 
 ### Default Arguments
+
+Default arguments allow you to call a function without specifying all its parameters.
 
 ```cpp
 int add(int a, int b = 5) { return a + b; }  // b has a default value of 5
@@ -236,6 +256,8 @@ int add(int a, int b = 5) { return a + b; }  // b has a default value of 5
 ---
 
 ## Classes and Objects
+
+Classes are user-defined data types that represent real-world entities. Objects are instances of classes.
 
 ### Declaring a Class
 
@@ -262,6 +284,8 @@ person1.greet();
 
 ### Constructor and Destructor
 
+Constructors are special functions that are called when an object is created. Destructors are called when an object is destroyed.
+
 ```cpp
 class Person {
 public:
@@ -284,6 +308,8 @@ public:
 ---
 
 ## Memory Management
+
+Memory management involves allocating and deallocating memory dynamically.
 
 ### Dynamically Allocating Memory
 
@@ -310,6 +336,8 @@ delete[] arr;  // Deallocates memory
 ---
 
 ## Pointers and References
+
+Pointers store memory addresses, while references are aliases for existing variables.
 
 ### Pointers
 
@@ -340,6 +368,8 @@ cout << *(ptr + 1);  // Output: 2
 
 ## Arrays and Vectors
 
+Arrays and vectors are used to store multiple values in a single variable.
+
 ### Declaring an Array
 
 ```cpp
@@ -354,6 +384,8 @@ cout << arr[0];  // Output: 1
 
 ### Vectors (Dynamic Arrays)
 
+Vectors are dynamic arrays that can change size.
+
 ```cpp
 #include <vector>
 
@@ -365,6 +397,8 @@ cout << vec[0];     // Output: 10
 ---
 
 ## Strings
+
+Strings are used to store sequences of characters.
 
 ### Declaring a String
 
@@ -389,6 +423,8 @@ char name[] = "John";  // Null-terminated string (C-style)
 ---
 
 ## File Handling
+
+File handling allows you to read from and write to files.
 
 ### Opening Files
 
@@ -419,6 +455,8 @@ infile.close();
 
 ## Exception Handling
 
+Exception handling allows you to handle runtime errors gracefully.
+
 ### try-catch Block
 
 ```cpp
@@ -445,13 +483,13 @@ try {
 
 ## Templates
 
+Templates allow you to write generic and reusable code.
+
 ### Function Templates
 
 ```cpp
 template <typename T>
-T add(T a, T b
-
-) {
+T add(T a, T b) {
     return a + b;
 }
 ```
@@ -473,6 +511,8 @@ public:
 ---
 
 ## STL (Standard Template Library)
+
+The Standard Template Library (STL) provides a set of common classes and functions for data structures and algorithms.
 
 ### Vectors
 
@@ -501,6 +541,8 @@ numbers.insert(4);
 
 ### Iterators
 
+Iterators are used to traverse through the elements of a container.
+
 ```cpp
 #include <vector>
 vector<int> vec = {1, 2, 3};
@@ -512,6 +554,8 @@ for (auto it = vec.begin(); it != vec.end(); ++it) {
 ---
 
 ## Common Functions
+
+Commonly used functions in C++.
 
 - **cout**: Output to console
 - **cin**: Input from console
@@ -538,4 +582,3 @@ for (auto it = vec.begin(); it != vec.end(); ++it) {
 ## Conclusion
 
 This cheatsheet covers the most essential concepts of C++ programming, from basic syntax to advanced features like templates and exception handling. Whether you are a beginner or an experienced developer, this guide should help you quickly reference key syntax and concepts in C++.
-```
