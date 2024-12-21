@@ -24,6 +24,8 @@ This cheatsheet is a comprehensive guide to the most important SQL commands and 
 
 ### Structure of a SQL Query
 
+A basic SQL query consists of several clauses such as SELECT, FROM, WHERE, ORDER BY, and LIMIT. These clauses are used to retrieve and manipulate data from a database.
+
 ```sql
 SELECT column1, column2
 FROM table_name
@@ -33,6 +35,8 @@ LIMIT n;
 ```
 
 ### Commenting in SQL
+
+Comments are used to explain sections of SQL code. They are ignored by the SQL engine.
 
 - **Single-line comment**: `-- This is a comment`
 - **Multi-line comment**: 
@@ -45,7 +49,11 @@ LIMIT n;
 
 ## Data Definition Language (DDL)
 
+DDL commands are used to define and modify the structure of database objects such as tables, indexes, and constraints.
+
 ### Creating a Table
+
+The `CREATE TABLE` statement is used to create a new table in the database.
 
 ```sql
 CREATE TABLE table_name (
@@ -67,6 +75,8 @@ CREATE TABLE employees (
 ```
 
 ### Altering a Table
+
+The `ALTER TABLE` statement is used to modify an existing table structure.
 
 #### Adding a Column
 
@@ -98,11 +108,15 @@ RENAME TO new_table_name;
 
 ### Dropping a Table
 
+The `DROP TABLE` statement is used to delete a table and its data from the database.
+
 ```sql
 DROP TABLE table_name;
 ```
 
 ### Creating an Index
+
+Indexes are used to speed up the retrieval of rows by using a pointer.
 
 ```sql
 CREATE INDEX index_name
@@ -110,6 +124,8 @@ ON table_name (column_name);
 ```
 
 ### Dropping an Index
+
+The `DROP INDEX` statement is used to delete an index from the database.
 
 ```sql
 DROP INDEX index_name;
@@ -119,7 +135,11 @@ DROP INDEX index_name;
 
 ## Data Manipulation Language (DML)
 
+DML commands are used to manipulate data stored in the database.
+
 ### Inserting Data into a Table
+
+The `INSERT INTO` statement is used to add new rows of data to a table.
 
 ```sql
 INSERT INTO table_name (column1, column2, ...)
@@ -134,6 +154,8 @@ VALUES (1, 'John Doe', 30, '2022-01-01');
 ```
 
 ### Updating Data in a Table
+
+The `UPDATE` statement is used to modify existing data in a table.
 
 ```sql
 UPDATE table_name
@@ -151,6 +173,8 @@ WHERE id = 1;
 
 ### Deleting Data from a Table
 
+The `DELETE` statement is used to remove rows from a table.
+
 ```sql
 DELETE FROM table_name
 WHERE condition;
@@ -167,7 +191,11 @@ WHERE id = 1;
 
 ## Data Query Language (DQL)
 
+DQL commands are used to query the database and retrieve data.
+
 ### Selecting Data from a Table
+
+The `SELECT` statement is used to fetch data from a database.
 
 ```sql
 SELECT column1, column2, ...
@@ -186,6 +214,8 @@ SELECT name, age FROM employees WHERE age > 30;
 
 ### Wildcards
 
+Wildcards are used in SQL to search for data within a table.
+
 - `*`: Select all columns
 - `%`: Wildcard for zero or more characters (in `LIKE` clause)
 - `_`: Wildcard for exactly one character (in `LIKE` clause)
@@ -200,7 +230,11 @@ SELECT * FROM employees WHERE name LIKE 'J%';
 
 ## Data Control Language (DCL)
 
+DCL commands are used to control access to data in the database.
+
 ### Granting Permissions
+
+The `GRANT` statement is used to give users access privileges to the database.
 
 ```sql
 GRANT permission ON object TO user;
@@ -213,6 +247,8 @@ GRANT SELECT, INSERT ON employees TO 'user1';
 ```
 
 ### Revoking Permissions
+
+The `REVOKE` statement is used to remove access privileges from users.
 
 ```sql
 REVOKE permission ON object FROM user;
@@ -227,6 +263,8 @@ REVOKE SELECT ON employees FROM 'user1';
 ---
 
 ## Joins
+
+Joins are used to combine rows from two or more tables based on a related column between them.
 
 ### INNER JOIN
 
@@ -276,7 +314,11 @@ ON table1.column = table2.column;
 
 ## Subqueries
 
+Subqueries are nested queries used to perform operations that require multiple steps.
+
 ### Subquery in SELECT
+
+A subquery can be used in the SELECT clause to return a value that will be used in the main query.
 
 ```sql
 SELECT column1, (SELECT column2 FROM table2 WHERE condition) AS alias
@@ -285,6 +327,8 @@ FROM table1;
 
 ### Subquery in WHERE
 
+A subquery can be used in the WHERE clause to filter the results of the main query.
+
 ```sql
 SELECT column1
 FROM table1
@@ -292,6 +336,8 @@ WHERE column2 IN (SELECT column2 FROM table2 WHERE condition);
 ```
 
 ### Subquery in FROM
+
+A subquery can be used in the FROM clause to create a temporary table that will be used in the main query.
 
 ```sql
 SELECT alias.column1
@@ -302,7 +348,11 @@ FROM (SELECT column1 FROM table2 WHERE condition) AS alias;
 
 ## Indexes
 
+Indexes are used to improve the speed of data retrieval operations on a database table.
+
 ### Creating an Index
+
+The `CREATE INDEX` statement is used to create an index on one or more columns of a table.
 
 ```sql
 CREATE INDEX index_name
@@ -311,13 +361,15 @@ ON table_name (column1, column2);
 
 ### Dropping an Index
 
+The `DROP INDEX` statement is used to delete an index from the database.
+
 ```sql
 DROP INDEX index_name;
 ```
 
 ### Unique Index
 
-Ensures that all values in a column (or group of columns) are unique.
+A unique index ensures that all values in a column (or group of columns) are unique.
 
 ```sql
 CREATE UNIQUE INDEX index_name
@@ -327,6 +379,8 @@ ON table_name (column_name);
 ---
 
 ## Aggregation Functions
+
+Aggregation functions perform a calculation on a set of values and return a single value.
 
 ### COUNT
 
@@ -364,6 +418,8 @@ SELECT MIN(column_name), MAX(column_name) FROM table_name;
 
 ## Grouping and Sorting
 
+Grouping and sorting are used to organize and order the result set of a query.
+
 ### GROUP BY
 
 Groups rows that have the same values into summary rows.
@@ -399,6 +455,8 @@ ORDER BY column1 DESC;
 
 ## Transactions
 
+Transactions are used to ensure the integrity of data by grouping multiple operations into a single unit of work.
+
 ### Starting a Transaction
 
 ```sql
@@ -420,6 +478,8 @@ ROLLBACK;
 ---
 
 ## Advanced SQL
+
+Advanced SQL techniques provide more complex and powerful ways to manipulate and retrieve data.
 
 ### CASE WHEN
 
@@ -468,5 +528,3 @@ SELECT column FROM table2;
 ## Conclusion
 
 This SQL cheatsheet covers all the essential SQL commands and techniques you’ll need for working with relational databases. Whether you are querying, inserting, updating, or joining data, this guide will help you work more effectively with SQL.
-
-```
