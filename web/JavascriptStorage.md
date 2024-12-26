@@ -1,6 +1,4 @@
-Here’s the combined Markdown document including all the code for the four files:
 
-```markdown
 # File Descriptions with Code
 
 This document provides a brief explanation of four HTML files that demonstrate the usage of `localStorage` and `sessionStorage` in JavaScript, along with the complete code for each file.
@@ -149,6 +147,5 @@ This file is an HTML document that retrieves and displays the user's email store
     </script>
 </body>
 </html>
-```
-```
+
 
