@@ -8,10 +8,13 @@ This document outlines the database design for an eCommerce website named `mysho
 2. [User Addresses](#user-addresses)
 3. [Categories](#categories)
 4. [Products](#products)
-5. [User Carts](#user-carts)
-6. [Shippings](#shippings)
-7. [Orders](#orders)
-8. [Order Products](#order-products)
+5. [Product Images](#product-images)
+6. [User Carts](#user-carts)
+7. [Shippings](#shippings)
+8. [Orders](#orders)
+9. [Order Products](#order-products)
+10. [Payments](#payments)
+11. [Reviews](#reviews)
 
 ---
 
@@ -87,10 +90,23 @@ The `products` table stores information about the products available on the webs
 | quantity    | INT       | Available quantity                |
 | in_stock    | BOOLEAN   | Stock status                      |
 | status      | BOOLEAN   | Product status                    |
-| images      | TEXT      | URLs of product images            |
 | created_at  | TIMESTAMP | Timestamp of creation             |
 | updated_at  | TIMESTAMP | Timestamp of last update          |
 | deleted_at  | TIMESTAMP | Timestamp of deletion             |
+
+---
+
+## Product Images
+
+The `product_images` table stores URLs of product images.
+
+### Table: `product_images`
+
+| Column     | Type | Description                     |
+| ---------- | ---- | ------------------------------- |
+| id         | INT  | Primary key                     |
+| product_id | INT  | Foreign key to `products` table |
+| image_url  | TEXT | URL of the product image        |
 
 ---
 
@@ -129,15 +145,17 @@ The `orders` table stores information about the orders placed by users.
 
 ### Table: `orders`
 
-| Column          | Type    | Description                           |
-| --------------- | ------- | ------------------------------------- |
-| id              | INT     | Primary key                           |
-| user_id         | INT     | Foreign key to `users` table          |
-| user_address_id | INT     | Foreign key to `user_addresses` table |
-| order_amount    | DECIMAL | Total order amount                    |
-| shipping_amount | DECIMAL | Shipping amount                       |
-| discount        | DECIMAL | Discount amount                       |
-| tax             | DECIMAL | Tax amount                            |
+| Column          | Type      | Description                           |
+| --------------- | --------- | ------------------------------------- |
+| id              | INT       | Primary key                           |
+| user_id         | INT       | Foreign key to `users` table          |
+| user_address_id | INT       | Foreign key to `user_addresses` table |
+| order_amount    | DECIMAL   | Total order amount                    |
+| shipping_amount | DECIMAL   | Shipping amount                       |
+| discount        | DECIMAL   | Discount amount                       |
+| tax             | DECIMAL   | Tax amount                            |
+| created_at      | TIMESTAMP | Timestamp of creation                 |
+| updated_at      | TIMESTAMP | Timestamp of last update              |
 
 ---
 
@@ -151,11 +169,44 @@ The `order_products` table stores the products included in each order.
 | ---------------- | ------- | ------------------------------- |
 | id               | INT     | Primary key                     |
 | order_id         | INT     | Foreign key to `orders` table   |
-| user_id          | INT     | Foreign key to `users` table    |
 | product_id       | INT     | Foreign key to `products` table |
 | product_name     | VARCHAR | Name of the product             |
 | product_price    | DECIMAL | Price of the product            |
 | product_quantity | INT     | Quantity of the product         |
+
+---
+
+## Payments
+
+The `payments` table stores information about the payments made for orders.
+
+### Table: `payments`
+
+| Column     | Type      | Description                                |
+| ---------- | --------- | ------------------------------------------ |
+| id         | INT       | Primary key                                |
+| order_id   | INT       | Foreign key to `orders` table              |
+| amount     | DECIMAL   | Payment amount                             |
+| method     | VARCHAR   | Payment method (e.g., Credit Card, PayPal) |
+| status     | VARCHAR   | Payment status (e.g., Completed, Pending)  |
+| created_at | TIMESTAMP | Timestamp of payment                       |
+
+---
+
+## Reviews
+
+The `reviews` table stores user reviews for products.
+
+### Table: `reviews`
+
+| Column     | Type      | Description                     |
+| ---------- | --------- | ------------------------------- |
+| id         | INT       | Primary key                     |
+| user_id    | INT       | Foreign key to `users` table    |
+| product_id | INT       | Foreign key to `products` table |
+| rating     | INT       | Rating given by the user        |
+| comment    | TEXT      | Review comment                  |
+| created_at | TIMESTAMP | Timestamp of review             |
 
 ---
 
