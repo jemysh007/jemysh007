@@ -1,53 +1,30 @@
-PHP OOP Concepts
+
+# PHP OOP Concepts
 
 This document explains PHP Object-Oriented Programming (OOP) concepts with real-world examples and filenames for each implementation.
 
+---
+
+## Table of Contents
+1. [Classes and Objects](#classes-and-objects)
+2. [Constructors and Destructors](#constructors-and-destructors)
+3. [Properties and Methods](#properties-and-methods)
+4. [Inheritance](#inheritance)
+5. [Access Modifiers](#access-modifiers)
+6. [Polymorphism](#polymorphism)
+7. [Abstraction](#abstraction)
+8. [Interfaces](#interfaces)
+9. [Static Methods and Properties](#static-methods-and-properties)
+10. [Traits](#traits)
+11. [Namespaces](#namespaces)
 
 ---
 
-Table of Contents
+### 1. Classes and Objects
 
-1. Classes and Objects
+**Filename:** `CarExample.php`
 
-
-2. Constructors and Destructors
-
-
-3. Properties and Methods
-
-
-4. Inheritance
-
-
-5. Access Modifiers
-
-
-6. Polymorphism
-
-
-7. Abstraction
-
-
-8. Interfaces
-
-
-9. Static Methods and Properties
-
-
-10. Traits
-
-
-11. Namespaces
-
-
-
-
----
-
-1. Classes and Objects
-
-Filename: CarExample.php
-
+```php
 <?php
 class Car {
     public $brand;
@@ -63,14 +40,15 @@ $car->brand = "Toyota";
 $car->color = "Red";
 echo $car->displayDetails(); // Output: This is a Red Toyota.
 ?>
-
+```
 
 ---
 
-2. Constructors and Destructors
+### 2. Constructors and Destructors
 
-Filename: LaptopExample.php
+**Filename:** `LaptopExample.php`
 
+```php
 <?php
 class Laptop {
     public $brand;
@@ -88,14 +66,15 @@ class Laptop {
 $laptop = new Laptop("Dell");
 // Destructor is automatically called at the end of the script.
 ?>
-
+```
 
 ---
 
-3. Properties and Methods
+### 3. Properties and Methods
 
-Filename: PersonExample.php
+**Filename:** `PersonExample.php`
 
+```php
 <?php
 class Person {
     public $name;
@@ -109,14 +88,15 @@ $person = new Person();
 $person->name = "John";
 echo $person->greet(); // Output: Hello, my name is John.
 ?>
-
+```
 
 ---
 
-4. Inheritance
+### 4. Inheritance
 
-Filename: AnimalInheritance.php
+**Filename:** `AnimalInheritance.php`
 
+```php
 <?php
 class Animal {
     public $name;
@@ -136,14 +116,15 @@ $dog = new Dog();
 $dog->name = "Buddy";
 echo $dog->makeSound(); // Output: Buddy barks.
 ?>
-
+```
 
 ---
 
-5. Access Modifiers
+### 5. Access Modifiers
 
-Filename: AccessModifiers.php
+**Filename:** `AccessModifiers.php`
 
+```php
 <?php
 class Example {
     public $publicProperty = "Public";
@@ -159,14 +140,15 @@ $obj = new Example();
 echo $obj->publicProperty; // Output: Public
 echo $obj->getProperties(); // Output: Public, Protected, Private
 ?>
-
+```
 
 ---
 
-6. Polymorphism
+### 6. Polymorphism
 
-Filename: PolymorphismExample.php
+**Filename:** `PolymorphismExample.php`
 
+```php
 <?php
 class Shape {
     public function draw() {
@@ -187,14 +169,15 @@ function renderShape(Shape $shape) {
 $circle = new Circle();
 renderShape($circle); // Output: Drawing a circle.
 ?>
-
+```
 
 ---
 
-7. Abstraction
+### 7. Abstraction
 
-Filename: AbstractClassExample.php
+**Filename:** `AbstractClassExample.php`
 
+```php
 <?php
 abstract class Vehicle {
     abstract public function move();
@@ -209,14 +192,15 @@ class Car extends Vehicle {
 $car = new Car();
 echo $car->move(); // Output: Car is moving.
 ?>
-
+```
 
 ---
 
-8. Interfaces
+### 8. Interfaces
 
-Filename: InterfaceExample.php
+**Filename:** `InterfaceExample.php`
 
+```php
 <?php
 interface Flyable {
     public function fly();
@@ -231,14 +215,15 @@ class Bird implements Flyable {
 $bird = new Bird();
 echo $bird->fly(); // Output: Bird is flying.
 ?>
-
+```
 
 ---
 
-9. Static Methods and Properties
+### 9. Static Methods and Properties
 
-Filename: StaticExample.php
+**Filename:** `StaticExample.php`
 
+```php
 <?php
 class MathUtils {
     public static $pi = 3.14;
@@ -251,14 +236,15 @@ class MathUtils {
 echo MathUtils::$pi; // Output: 3.14
 echo MathUtils::add(5, 10); // Output: 15
 ?>
-
+```
 
 ---
 
-10. Traits
+### 10. Traits
 
-Filename: TraitExample.php
+**Filename:** `TraitExample.php`
 
+```php
 <?php
 trait Logger {
     public function log($message) {
@@ -273,14 +259,15 @@ class Application {
 $app = new Application();
 $app->log("Application started."); // Output: Log: Application started.
 ?>
-
+```
 
 ---
 
-11. Namespaces
+### 11. Namespaces
 
-Filename: NamespaceExample.php
+**Filename:** `NamespaceExample.php`
 
+```php
 <?php
 namespace App\Models;
 
@@ -293,9 +280,8 @@ class User {
 $user = new \App\Models\User();
 echo $user->getName(); // Output: John Doe
 ?>
-
+```
 
 ---
 
 This structure provides a clear overview of PHP OOP concepts, complete with filenames for better organization.
-
