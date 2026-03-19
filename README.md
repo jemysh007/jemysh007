@@ -115,8 +115,8 @@ If you're building something exciting, futuristic, or just fun —
 **I’d love to collaborate!** 
 
 <div align="left">
-<a href="mailto:jemysh007@gmail.com">
-  <img src="https://img.shields.io/badge/Email-jemysh007@gmail.com-blue?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+<a href="mailto:jemish268@gmail.com">
+  <img src="https://img.shields.io/badge/Email-jemish268@gmail.com-blue?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
 </a>
 </div>
 
